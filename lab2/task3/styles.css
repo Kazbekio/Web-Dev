@@ -1,0 +1,89 @@
+body {
+  font-family: Arial;
+  margin: 20px;
+}
+
+.top {
+  text-align: center;
+  background-color: #eee;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.top h1 {
+  color: blue;
+  font-size: 28px;
+}
+
+.top p {
+  color: #666;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.middle {
+  padding: 20px;
+}
+
+.plans {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.plan {
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: 30%;
+  background: white;
+}
+
+.plan h3 {
+  color: black;
+}
+
+.plan div {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.bottom {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.addons-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.addons-list > div {
+  border: 1px solid #ddd;
+  padding: 15px;
+  background: white;
+}
+
+@media (max-width: 768px) {
+  .plans {
+    flex-direction: column;
+  }
+  
+  .plan {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .addons-list {
+    grid-template-columns: 1fr;
+  }
+}
